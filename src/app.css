@@ -100,3 +100,93 @@ body{
 .fa {
     font-family: FontAwesome, fontawesome-webfont;
   }
+  body{
+    font-family: "Proxima Nova";
+}
+ 
+.input{
+    border-bottom:2px solid #000;
+}
+.page{
+    background-image: url("~/app/images/bg1.jpg");
+    background-repeat:no-repeat;
+    width:100%;
+    background-size:cover;
+}
+.page .notes{
+    color: #0F0F0F;
+    font-family: "angelina";
+    font-size: 28;   
+    width: 100%;  
+    margin-top:40;
+    margin-bottom:20;
+}
+.page .images{
+   height: 100%;
+   width: 250; 
+   margin-top:70; 
+}
+.page .input{
+    border-width:1;
+    border-color: rgba(13, 47, 88, 0.4);
+    background:#fff;
+    height:40;
+    border-radius: 4;
+}
+.page .sign-btn{
+    font-size: 18;
+    color:#fff;
+    width: 100%;
+    background-color:#fff;
+    color: #000;
+    font-weight:bold;
+    margin:5;  
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+}
+.page .btn-fb{
+    background: #1a4ab2;
+    color: #fff;
+}
+.page .btn-google{
+    box-shadow: 0 0 0 1px #1a4ab2 inset; 
+    border-color: #1a4ab2 ;
+    border-width:1;
+    color:#000;
+    border:2px solid #000;
+    background-color:#fff;
+}
+.page .Reg-btn{
+    background-color: #d9242b ;
+    color:#fff;  
+}
+.page button{
+    font-size:16;
+    text-transform: capitalize;
+    margin:8 0;
+    border-radius: 5;
+    height: 44;
+ }
+.page label{  
+    text-align: center;
+    font-size: 15;
+    margin: 12;
+    color:#000;
+}
+.page .notes-acc{
+    margin: 10;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+.fab {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+  }

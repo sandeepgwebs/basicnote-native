@@ -1,10 +1,11 @@
 import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
+import { NewNoteComponent } from "./new-note/new-note.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/home", pathMatch: "full" },
-    { path: "home", loadChildren: "~/app/home/home.module#HomeModule" }
+    { path: "", loadChildren: "~/app/home/home.module#HomeModule" },
+    { path: "new-note", loadChildren: "~/app/new-note/new-note.module#NewNoteModule" } 
 ];
 
 @NgModule({
