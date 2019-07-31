@@ -3,7 +3,6 @@ import { Router } from "@angular/router";
 import { Page } from "tns-core-modules/ui/page/page";
 
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
 import { HttpClient} from "@angular/common/http";
 import { User } from "../models/user";
 @Component({
@@ -12,12 +11,11 @@ import { User } from "../models/user";
     templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
-
-    constructor(private router: Router,private page: Page) {
     token: any;
     APIURL: string = 'http://basicnote.mandisuppliers.com/api/';
     user : User;
-    constructor(private router: Router, private http: HttpClient) {
+    
+    constructor(private router: Router, private http: HttpClient,private page: Page ) {
         // Use the component constructor to inject providers.
         this.user = new User();
         this.user.email = ''; 
