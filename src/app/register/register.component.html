@@ -4,15 +4,15 @@
         <Image class="images" src="~/app/images/logo.png"></Image>
         <Label class="notes" text="Let's take some notes!"></Label>
         <StackLayout row="2" class="input-field">
-            <textField class="input input-border" hint="name" keyboardType="email"></textField>
+            <textField class="input-email" hint="Name" keyboardType="email"></textField>
         </StackLayout>
         <StackLayout row="1" class="input-field">
-            <textField class="input input-border" hint="email" keyboardType="email"></textField>
+            <textField class="input-email" hint="Email" keyboardType="email"></textField>
         </StackLayout>  
         <StackLayout row="1" class="input-field">
-            <textField class="input input-border" hint="password" keyboardType="email"></textField>
+            <textField required class="input-email" hint="Password"  secure="true"></textField>
         </StackLayout>   
-        <button text="Register" class="sign-btn" (tap)="onTap()"></button>
+        <button text="Register" class="sign-btn"></button>
         <Label class="notes-acc" text="Already have a account?"></Label>
         <button text="Login in" class="Reg-btn" (tap)="login()"></button>
         <!--Label text="&#xf39e;" class="fab"></Label>
