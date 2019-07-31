@@ -1,0 +1,22 @@
+<FlexboxLayout class="page page-bg">
+    <scrollView>
+       <StackLayout margin="10"  class="form">
+        <Image class="images" src="~/app/images/logo.png"></Image>
+        <Label class="notes" text="Let's take some notes!"></Label>
+        <StackLayout row="2" class="input-field">
+            <textField class="input input-border" hint="name" keyboardType="email"></textField>
+        </StackLayout>
+        <StackLayout row="1" class="input-field">
+            <textField class="input input-border" hint="email" keyboardType="email"></textField>
+        </StackLayout>  
+        <StackLayout row="1" class="input-field">
+            <textField class="input input-border" hint="password" keyboardType="email"></textField>
+        </StackLayout>   
+        <button text="Register" class="sign-btn" (tap)="onTap()"></button>
+        <Label class="notes-acc" text="Already have a account?"></Label>
+        <button text="Login in" class="btn-google" (tap)="login()"></button>
+        <!--Label text="&#xf39e;" class="fab"></Label>
+        <button text="Next" ios.position="right" (tap)="onTap()"></button-->
+        </StackLayout>
+    </scrollView> 
+</FlexboxLayout>

@@ -30,11 +30,16 @@ body{
     font-family: "Proxima Nova";
 }
  
-.input{
-    border-bottom:2px solid #000;
+.page .input{
+    border-width :1;
+    border-color:#d3d3d3;
+    padding:20;
+    height:35;
+    margin: 0;
 }
-.page{
+.page-bg{
     background-image: url("~/app/images/bg1.jpg");
+    overscroll-behavior-y: hidden;
 }
 .page .notes{
     color: #0F0F0F;
@@ -46,15 +51,14 @@ body{
 .page .images{
    height: 100%;
    width: 250; 
-   padding:20; 
+   margin:100 0 0 0; 
 }
 .page .sign-btn{
-    font-size: 20px;
-    color:#fff;
+    font-size: 16px;
     width: 100%;
     background-color:#fff;
-    color: #000;
-    font-weight:bold;
+    color: #0d2f58;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
 }
 .page .btn-fb{
     background: #1a4ab2;
@@ -63,7 +67,6 @@ body{
 .page .btn-google{
     box-shadow: 0 0 0 1px #1a4ab2 inset; 
     background-color: #d9242b ;
-    border:2px solid #000;
     color:#fff;
 }
 .page .Reg-btn{
@@ -99,4 +102,71 @@ body{
 }
 .fa {
     font-family: FontAwesome, fontawesome-webfont;
-  }
+}
+
+.font-awesome {
+    font-family: "FontAwesome";
+}
+.add-notes{
+    margin:8 10 0;
+}
+.add-notes .add-options{
+    border-width:1;
+    border-color: #d3d3d3 ;
+    border-radius: 8;
+    height:220;
+}
+.add-options{
+    text-align:center;
+    vertical-align: center;
+    align-self: center;
+    display: inline-block;
+    margin: 0;
+     
+}
+.record-icon{
+    border-width:1;
+    font-size:25;
+    border-color:#d3d3d3;
+    height:60;
+    width:60;
+    border-radius: 50;
+    margin:10;
+    padding-top:14;
+    text-transform: capitalize;
+}
+.select-opt label{
+    margin:10 5;
+    text-transform: capitalize;
+}
+.add-note textField{
+    border-width :1;
+    border-color:rgba(13, 47, 88, 0.4);
+    border-radius: 7px;
+    padding:10;
+    margin:8 0;
+    border-radius: 8;
+    font-size: 15;
+    color: #0d2f58;
+}
+.add-note .Reg-btn{
+    background-color: #d9242b ;
+    color:#fff; 
+    border-radius: 8;
+    margin:8 0 ; 
+}
+.input-message{
+    height:150;
+    padding: 0;
+    margin: 0;
+}
+.select-opt i{
+    border-width:1;
+    border-color:#ccc;
+}
+.select-opt label{
+    display: inline-block;
+}
+.pull-left .icon{
+    color:#990000;
+}

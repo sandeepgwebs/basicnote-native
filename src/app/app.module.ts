@@ -3,7 +3,9 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-//import { LoginPipe } from './login.pipe';
+import { NewNoteComponent } from '../app/new-note/new-note.component';
+import { RegisterComponent } from '../app/register/register.component';
+import { HomeComponent } from '../app/home/Home.Component';
 
 @NgModule({
     bootstrap: [
@@ -15,7 +17,10 @@ import { AppComponent } from "./app.component";
     ],
     declarations: [
         AppComponent,
-      //      LoginPipe
+      //LoginPipe
+      NewNoteComponent,
+      RegisterComponent,
+      HomeComponent,
     ],
     schemas: [
         NO_ERRORS_SCHEMA

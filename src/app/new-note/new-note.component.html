@@ -1,0 +1,34 @@
+<!--ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Notes"></Label>  
+</ActionBar-->
+<page class="add-notes"> 
+<scrollView> 
+   <StackLayout> 
+        <StackLayout class="add-options" textAlignment="center" orientation="horizontal">
+            <label text="r" class="record-icon" verticalAlignment="center"></label>
+            <label text="c" class="record-icon" verticalAlignment="center"></label>
+            <label text="v" class="record-icon" verticalAlignment="center"></label>
+        </StackLayout>
+        <DockLayout  class="select-opt">
+            <label class="pull-left" dock="left">
+                <FormattedString>
+                    <Span text="notes" class="texted" color="#0d2f58" ></Span>    
+                    <Span text="&#xf39e;" class="icon"></Span>
+                </FormattedString>
+            </label>
+            <Label class="pull-right" dock="right" text="category"></Label>
+        </DockLayout >
+        <StackLayout class="add-note"> 
+            <StackLayout class="input-field">
+                <textField class="input input-border" hint="" keyboardType="email"></textField>
+            </StackLayout>      
+            <StackLayout class="input-field">
+                <textField class="input-message" hint="" keyboardType="email"></textField>
+            </StackLayout>   
+            <button text="save" class="Reg-btn"></button>
+
+          
+        </StackLayout>
+    </StackLayout>
+</scrollView>
+</page>
