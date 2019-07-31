@@ -1,6 +1,6 @@
 {
   "nativescript": {
-    "id": "org.nativescript.appnative",
+    "id": "org.nativescript.basicnotes",
     "tns-android": {
       "version": "6.0.0"
     },

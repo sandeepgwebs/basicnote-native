@@ -5,6 +5,7 @@ import { Page } from "tns-core-modules/ui/page/page";
 import { NgForm } from '@angular/forms';
 import { HttpClient} from "@angular/common/http";
 import { User } from "../models/user";
+import { tnsOAuthLogin } from "~/auth.service";
 @Component({
     selector: "Home",
     moduleId: module.id,
@@ -42,4 +43,10 @@ export class HomeComponent implements OnInit {
             alert('failure');
         });
       }
+    loginGoogle(){
+        tnsOAuthLogin('google');
+    }
+    loginFacebook(){
+        tnsOAuthLogin('facebook');
+    }
 }

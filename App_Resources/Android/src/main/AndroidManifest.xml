@@ -33,6 +33,14 @@
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+
+				<data android:path="/auth"
+				android:scheme="com.googleusercontent.apps.350469076262-2d537fgunp2omv6ova0qjf1ru32m230q"></data>
+			</intent-filter>
 		</activity>
 		<activity android:name="com.tns.ErrorReportActivity"/>
 	</application>
