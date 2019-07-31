@@ -1,18 +1,22 @@
-<!--ActionBar class="action-bar">
+<!---ActionBar class="action-bar">
     <Label class="action-bar-title" text="Log In"></Label>  
 </ActionBar-->
-<FlexboxLayout class="page page-bg">
+<FlexboxLayout class="page">
     <scrollView>
-       <StackLayout margin="10"  class="form">
+       <StackLayout margin="10"  class="form" >
         <Image class="images" src="~/app/images/logo.png"></Image>
         <Label class="notes" text="Let's take some notes!"></Label>
         <StackLayout row="2" class="input-field">
-            <textField class="input input-border" hint="Email" keyboardType="email"></textField>
+            <textField required  class="input" hint="Email"  keyboardType="email" [(ngModel)]="user.email"></textField>
+            <StackLayout class="hr-light"></StackLayout>
         </StackLayout>
         <StackLayout row="1" class="input-field">
-            <textField class="input input-border" hint="password" keyboardType="email"></textField>
+            <textField required  class="input" hint="password"   [(ngModel)]="user.password"></textField>
+            <StackLayout class="hr-light"></StackLayout>
         </StackLayout>    
-        <button text="sign in" class="sign-btn" (tap)="onTap()"></button>
+
+        <button text="sign in" class="sign-btn" (tap)="login()"></button> 
+          
         <Label class="notesy" text="Don't have a account?"></Label>
         <button text="Register" class="Reg-btn" (tap)="register()"></button>
         <Label class="notes-acc" text="You can log in with"></Label>
